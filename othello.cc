@@ -219,6 +219,12 @@ void Othello::restart() {
   openSpots = 60;
 }
 
+/**
+* @brief Checks to see if a user move is a legal move 
+* @param Requires move
+* @return Returns true or false
+*/
+
 bool Othello::is_legal(const string& move)const {
 
   int c, r;
