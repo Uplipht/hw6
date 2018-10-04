@@ -201,7 +201,11 @@ void Othello::make_move(const string& move) {
   move_number++;
 }
 
-
+/**
+* @brief Restarts the game by resetting class variables to fresh game
+* @param Requires no arguments
+* @return Return void but updates object variables during execution
+*/
 void Othello::restart() {
 
   gameBoard[3][3].set_white();
