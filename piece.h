@@ -15,6 +15,12 @@ class piece {
 public:
 	piece() {theColor = blank;}
 
+/**
+* @brief this function flips the color of a piece
+* @param no parameters
+* @return returns nothing
+*/
+
 	void flip()
 	{
 		if (theColor == white) {

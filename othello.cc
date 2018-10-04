@@ -53,6 +53,13 @@ void Othello::display_status()const
   cout << "\nEnter a move in the format(letter,number) (Ex: A3)" << endl;
 }
 
+/**
+* @brief this function makes the move inputted
+* @param the move given by either user of AI
+* @return returns nothing
+*/
+
+
 void Othello::make_move(const string& move) {
 
   int c, r;
