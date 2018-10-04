@@ -9,6 +9,10 @@
 #include "piece.h"
 #include "colors.h"
 #include <iostream>
+/**\file
+* @brief This file contains the othello class function declarations and some one line defininitions. The othello class is dependent upon the game class.
+* @author Brock Ferrell
+*/
 using namespace std;
 
 namespace main_savitch_14

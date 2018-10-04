@@ -6,6 +6,12 @@
 #include <queue>      // Provides queue<string>
 #include <string>     // Provides string
 #include "game.h"     // Provides definition of game class
+
+/** \file
+* @brief This file contains the function definitions for the game class
+* @author Ferrel and Savitch
+*/
+
 using namespace std;
 
 namespace main_savitch_14
@@ -17,6 +23,12 @@ namespace main_savitch_14
 //*************************************************************************
 // PUBLIC MEMBER FUNCTIONS
 
+
+/**
+* @brief This function plays one round of the game
+* @param no parameters
+* @return returns the winner of the game
+*/
 game::who game::play( )
 // The play function should not be overridden. It plays one round of the
 // game, with the human player moving first and the computer second.
@@ -44,12 +56,21 @@ game::who game::play( )
 
 //*************************************************************************
 // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
-
+/**
+* @brief simply displays a message to screen
+* @param message a string that will be outputted to the screen
+* @return returns nothing
+*/
 void game::display_message(const string& message) const
 {
 	cout << message;
 }
 
+/**
+* @brief gets the users mvoe as input from the keyboard
+* @param no parameters
+* @return returns the users move in string
+*/
 string game::get_user_move( ) const
 {
 	string answer;
@@ -60,6 +81,11 @@ string game::get_user_move( ) const
 	return answer;
 }
 
+/**
+* @brief this function is used to find the user that is winning
+* @param no parameters
+* @return returns the user/computer that is winning
+*/
 game::who game::winning()const {
 
 	int value = evaluate();
@@ -77,6 +103,13 @@ game::who game::winning()const {
 //*************************************************************************
 // PRIVATE FUNCTIONS (these are the same for every game)
 
+
+/**
+* @brief Evaluate a board position with lookahead.
+* @param How deep the lookahead should go to evaluate the move.
+* @param Value of another move that we're considering. If the current board position can't beat this, then cut it short.
+* @return an evalation of the projected board. The return value is large if the position is good for the player who just moved.
+*/
 int game::eval_with_lookahead(int look_ahead, int beat_this)
 // Evaluate a board position with lookahead.
 // --int look_aheads:  How deep the lookahead should go to evaluate the move.
@@ -125,6 +158,11 @@ int game::eval_with_lookahead(int look_ahead, int beat_this)
 	return -best_value;
 }
 
+/**
+* @brief this function makes a computer move using eval_with_lookahead to determine the best move
+* @param no parameters
+* @return returns nothing
+*/
 void game::make_computer_move( )
 {
 	queue<string> moves;
@@ -158,6 +196,12 @@ void game::make_computer_move( )
 	make_move(best_move);
 }
 
+
+/**
+* @brief this function makes a human move
+* @param no parameters
+* @return returns nothing
+*/
 void game::make_human_move( ) {
 	string move;
 
@@ -171,6 +215,4 @@ void game::make_human_move( ) {
 }
 
 }
-
-
 

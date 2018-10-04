@@ -5,6 +5,11 @@
 
 #include "othello.h"
 
+/**\file
+* @brief This file contains the othello class function definitions. The othello class is dependent upon the game class.
+* @author Brock Ferrell
+*/
+
 namespace main_savitch_14
 {
 

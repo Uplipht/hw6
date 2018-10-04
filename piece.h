@@ -5,6 +5,10 @@
 
 #ifndef PIECE_H
 #define PIECE_H
+/**\file
+* @brief This file contains piece class function definitions and declarations.
+* @author Brock Ferrell
+*/
 enum color {black, white, blank};
 
 class piece {

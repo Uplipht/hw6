@@ -5,7 +5,10 @@
 #define MAIN_SAVITCH_GAME
 #include <queue>   // Provides queue<string>
 #include <string>  // Provides string
-
+/**\file
+* @brief This file contains function declarations for the game class and some one line definitions.
+* @author Ferrel and Savitch
+*/
 namespace main_savitch_14
 {
 class game

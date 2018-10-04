@@ -24,10 +24,15 @@
 //
 //***********************************************************
 
+
 #ifndef COLORS_H
 #define COLORS_H
 
 #include <string>
+/** \file
+* @brief This file strings that represent colors.
+* @author Matthew Beldyk
+*/
 using namespace std;
 
 const string BLINK     = "\e[5m";          //don't use this your
